@@ -50,17 +50,16 @@
       backdrop-filter: blur(18px);
     }
 
-    .mark {
-      width: 4rem;
-      height: 4rem;
+    .avatar {
+      width: 5rem;
+      height: 5rem;
       margin: 0 auto 1.5rem;
-      display: grid;
-      place-items: center;
-      border-radius: 1.25rem;
+      display: block;
+      border-radius: 1.35rem;
       border: 1px solid rgba(101, 255, 155, 0.28);
       background: rgba(101, 255, 155, 0.08);
-      color: var(--accent);
-      font-size: 2rem;
+      box-shadow: 0 0 36px rgba(101, 255, 155, 0.16);
+      object-fit: cover;
     }
 
     h1 {
@@ -80,7 +79,7 @@
 </head>
 <body>
   <main>
-    <div class="mark" aria-hidden="true">☘</div>
+    <img class="avatar" src="assets/clove-avatar.png" alt="Clove avatar">
     <h1>clovebot.me</h1>
     <p>A public landing page for Clove.</p>
   </main>
