@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>clovebot.my</title>
-  <meta name="description" content="A public landing page for Clove">
+  <meta name="description" content="Clove is a personal AI assistant and operator dashboard for email monitoring, calendar management, and knowledge base operations.">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
@@ -79,13 +79,40 @@
       color: var(--muted);
       font-size: clamp(1rem, 3vw, 1.2rem);
     }
+
+    .links {
+      margin-top: 2rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.95rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .links a:hover {
+      border-color: var(--accent);
+      background: rgba(101, 255, 155, 0.06);
+    }
   </style>
 </head>
 <body>
   <main>
     <img class="avatar" src="assets/clove-avatar.png" alt="Clove avatar">
     <h1>clovebot.my</h1>
-    <p>A public landing page for Clove.</p>
+    <p>Clove is a personal AI assistant and operator dashboard. It provides email monitoring, calendar management, and knowledge base operations for its operator.</p>
+    <div class="links">
+      <a href="/privacy.html">Privacy Policy</a>
+      <a href="/terms.html">Terms of Service</a>
+    </div>
   </main>
 </body>
 </html>
